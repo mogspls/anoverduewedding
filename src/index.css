@@ -1,9 +1,103 @@
 /* Reset CSS */
 * { margin: 0; padding: 0; box-sizing: border-box; }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Source+Serif+Pro:wght@200;300;600;700;900&display=swap');
 
-/* Classes */
+/*
+==============================
+Table of Contents
+==============================
+  0. Reset
+  1. Classes
+  2. Components
+    - Header
+    - Footer
+  3. Views
+    - Homepage
+  4. Media Queries
+  5. Animations
+*/
+
+/* 0. Reset
+----------------------------*/
+
+*, *:before, *:after {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+}
+br, hr {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+/* 1. Classes
+----------------------------*/
 .container {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+}
+
+/* 2. Components 
+----------------------------*/
+/* Header */
+#main-header {
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#main-header #logo {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+#main-header nav {
+  display: flex;
+  align-items: center;
+}
+#main-header nav ul { display: flex; list-style-type: none; height: 100%; align-items: center; }
+#main-header nav ul li { margin: 0px 10px; list-style-type: none; height: 100%; display: flex; align-items: center; }
+#main-header nav ul li a { text-decoration: none; font-family: 'Poppins', sans-serif; color: #fff; display: flex; height: 100%; position: relative;  }
+#main-header nav ul li a p { display: flex; height: 100%; align-items: center; }
+
+#main-header nav ul li:hover a::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%; 
+  bottom: 10px;
+  background-color: #fff; 
+  left: 0;
+  position: absolute;
+}
+
+/* 3. Pages
+----------------------------*/
+#homepage {
+  background-color: #CA9A9A;
+  height: 100%;
+  min-height: 100vh;
 }

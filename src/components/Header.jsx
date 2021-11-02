@@ -1,11 +1,21 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import Logo from "../assets/images/logo.svg"
 
 export default function Header() {
   return (
     <header id="main-header">
-      <div className="container">
-        This is a header
-      </div>
+      <Link to="/">
+        <img src={Logo} alt="AnOverDueWedding" width="20px" id="logo" />
+      </Link>
+      <nav>
+        <ul>
+          <li><Link to="/"><p>Our Story</p></Link></li>
+          <li><Link to="/"><p>Attire</p></Link></li>
+          <li><Link to="/"><p>Map</p></Link></li>
+          <li><Link to="/"><p>Login</p></Link></li>
+        </ul>
+      </nav>
     </header>
   )
 }

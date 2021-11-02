@@ -2,6 +2,10 @@ import React from "react";
 
 export default function Homeview() {
   return (
-    <main>Hello World</main>
+    <main id="homepage">
+      <div className="container">
+        
+      </div>
+    </main>
   )
 }
