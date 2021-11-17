@@ -87,7 +87,7 @@ export default function Homeview() {
           <div style={{backgroundImage: `url(${First})`}} className="first"></div>
           <div style={{backgroundImage: `url(${Second})`}} className="second"></div>
         </div>
-        <div className="container" style={{position: 'absolute', top: "0", zIndex: '10'}}>
+        <div className="container">
           <div className="subtitle">
             <h1>An Overdue <br/> Wedding</h1>
             <p>Finally tying the knot at <strong>December 4, 2021</strong></p>

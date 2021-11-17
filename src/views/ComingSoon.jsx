@@ -12,7 +12,7 @@ export default function comingSoon() {
           border: 'solid 1px #fff'
         }} />
         <h1>Coming Soon.</h1>
-        <p>November 18, 2021 at 12:00am</p>
+        <p>November 18, 2021 at 3:00pm</p>
       </div>
     </main>
   )
