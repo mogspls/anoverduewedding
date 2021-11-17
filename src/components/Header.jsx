@@ -10,10 +10,9 @@ export default function Header() {
       </Link>
       <nav>
         <ul>
-          <li><Link to="/"><p>Our Story</p></Link></li>
-          <li><Link to="/"><p>Attire</p></Link></li>
-          <li><Link to="/"><p>Map</p></Link></li>
-          <li><Link to="/"><p>Login</p></Link></li>
+          {/* <li><Link to="/"><p>Our Story</p></Link></li> */}
+          {/* <li><Link to="/"><p>Attire</p></Link></li>
+          <li><Link to="/"><p>Map</p></Link></li> */}
         </ul>
       </nav>
     </header>
