@@ -24,6 +24,7 @@ function App() {
       <Route exact path="/RSVP" component={() => <RSVP/>} />
     </Switch>
   )
+  
 }
 
 // eslint-disable-next-line

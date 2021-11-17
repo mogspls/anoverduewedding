@@ -63,6 +63,11 @@ br, hr {
   max-width: 1200px;
   position: relative;
 }
+.spacer {
+  min-height: 100vh;
+  height: 100%;
+}
+.pin-spacer:nth-child(3){ height: 0 !important; padding: 0px !important; }
 
 /* 2. Components 
 ----------------------------*/
@@ -126,20 +131,30 @@ br, hr {
   background-position: 50%;
   overflow: hidden;
 }
+#homepage #landing {
+  opacity: 0;
+  transition: opacity 0.1s;
+  position: relative;
+  z-index: 100;
+}
 #homepage #landing .scrollDown {
-  position: absolute;
+  position: fixed;
   bottom: 50px;
   color: #000;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
+  z-index: 1;
   text-align: center;
 }
-#homepage #landing{
+#homepage #landing.is-active { 
+  opacity: 1; 
+  transition: 0.1s;
   background-color: #fff;
   height: 100%;
   min-height: 760px;
   max-height: 100vh;
   position: relative;
+  transition: 0.1s;
 }
 #homepage #landing .container {
   display: flex;
@@ -156,7 +171,8 @@ br, hr {
   height: 100%;
   z-index: 1;
   background-image: url('./assets/images/Isa-Jk.jpg');
-  background-size: cover;
+  background-size: cover; 
+  transition: 0.1s; 
   background-position: center;
 }
 #homepage #landing .subtitle {
@@ -187,61 +203,183 @@ br, hr {
 #homepage #second {
   width: 100%;
   z-index: 1000;
+  height: 100%;
+  max-height: 568px;
+  min-height: 100vh;
+  background: #E5D1CF
 }
-#homepage .wrapper {
+#second .wrapper { 
+  opacity: 0; 
   height: 100%;
   display: flex;
-  opacity: 0;
-  transition: 0.3s;
-  position: absolute;
+  transition: 0.1;
   width: 100%;
-  z-index: 1000;
+  position: fixed;
+  z-index: 1;
+  top: 0;
 }
-#homepage .wrapper.fff {
+#second .wrapper.active {
   opacity: 1;
-  transition: 0.3s;
-  background-color: #fff;
-  position: relative;
+  transition: 0.1s;
 }
-#homepage .wrapper div {
+#second .wrapper div {
   height: 100%;
   width: 100%;
 }
-#homepage .wrapper .first {
+#second .wrapper .first {
   background-position: 53% 41%;
   position: relative;
+  background-size: cover;
   z-index: 10;
 }
-#homepage .wrapper .second {
+#second .wrapper .second {
   background-position: 46% 36%;
+  background-size: cover;
   transform: scaleX(-1);
   position: relative;
   z-index: 10;
 }
+#second .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  max-width: 320px;
+}
+#second .container .details {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+#second .container .details h1 { text-align: center; }
+#second .container .details div h6 { font-size: 14px; }
+#second .container .details div { padding: 12px 0px; text-align: center; }
+#second .container .details div p { padding: 4px 0px; font-size: clamp(0.8rem, 1.15vw, 12rem); font-family: 'Poppins', sans-serif; font-weight: 300; color: #0A395C;}
 .displayNone {
   display: none;
 }
 
 /* Second */
-#second .container h1{
-  font-size: clamp(1rem, 10vw, 12rem);
+#third h1{
+  font-size: clamp(3rem, 12vw, 12rem);
   font-weight: 800;
   line-height: 0.9em;
   text-align: center;
   width: 100%;
+  position: relative;
+  z-index: 0;
+  transition: 0.3s;
 }
-#second .container .wrapper-element {
-  height: 50%;
+#third .container {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  position: fixed;
-  width: 100%;
   bottom: 0;
   z-index: 1000;
+  position: relative;
 }
 
+/* Fourth */
+#fourth {
+  height: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #E5D1CF;
+  position: relative;
+  z-index: 1000;
+}
+#fourth .logo-wrapper { padding: 12px; border: solid 2px #0A395C; border-radius: 150px; background: #0A395C;}
+#fourth .logo {
+  height: 150px;
+  width: 150px;
+  background: #0A395C;
+  padding: 24px;
+  border-radius: 150px;
+  border: solid 2px #fff;
+}
+#fourth .logo {
+  content: "";
+  display: block;
+  border: solid 2px #fff;
+}
+
+.ribbon {
+  height: 600px;
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ribbon::after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-left: 160px solid #E5D1CF;
+  border-right: 160px solid #E5D1CF;
+  border-bottom: 160px solid transparent;
+  bottom: -30px;
+  position: absolute;
+  top: 0;
+}
+.ribbon #envelope {
+  height: 100%;
+  max-height: 276px;
+  background: #eee;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  z-index: 10000;
+}
+.ribbon #envelope::before {
+  width: 0;
+  height: 0;
+  content: "";
+  border-style: solid;
+  border-width: 160px 0 0 320px;
+  border-color: transparent transparent transparent #eee;
+  position: absolute;
+  top: -58%;
+}
+.ribbon #envelope::after {
+  width: 0;
+  height: 0;
+  content: "";
+  border-style: solid;
+  border-width: 160px 0 0 320px;
+  border-color: transparent transparent #eee transparent;
+  position: absolute;
+  top: -58%;
+}
+.ribbon #envelope img {
+  fill: #0A395C;
+}
+.ribbon .letter {
+  height: 600px;
+  width: 300px;
+  position: absolute;
+  bottom: -50%;
+  background: #F7F7E6;
+  z-index: 10;
+  padding: 32px 0px;
+  text-align: center;
+  font-size: 32px;
+}
 /* 4. Media Queries
 ----------------------------*/
 
@@ -259,13 +397,6 @@ br, hr {
   #homepage #landing .subtitle h1 {
     font-size: 15vw;
   }
-  #homepage #second .wrapper {
-    flex-direction: column;
-  }
-  #homepage #second .wrapper div {
-    width: 100% !important;
-    height: 25% !important;
-  }
   #homepage #second .wrapper .first { background-position: 51% 39%; }
-  #homepage #second .wrapper .second { background-position: 45% 34%; }
+  #homepage #second .wrapper .second { background-position: 44% 34%; }
 }
