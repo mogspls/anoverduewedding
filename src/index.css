@@ -13,6 +13,7 @@ Table of Contents
     - Footer
   3. Views
     - Homepage
+    - Details
   4. Media Queries
   5. Animations
 */
@@ -266,7 +267,7 @@ br, hr {
   padding: 50px 0px;
   background: #E5D1CF;
 }
-#fourth h1 { font-size: 2em; }
+#fourth h1 { font-size: 2em; padding-bottom: 12px; }
 #fourth #entourage > div {
   padding: 18px 0px;
   text-align: center;
@@ -378,8 +379,65 @@ br, hr {
   text-align: center;
   font-size: 32px;
 }
+
+/* Details Page */
+#attire {
+  height: 100%;
+  min-height: 150vh;
+  background: #0D395D;
+  padding: 24px;
+}
+#attire .container header {
+  display: flex;
+}
+#attire h1 {
+  font-size: clamp(2rem, 5vw, 12rem);
+  font-weight: 800;
+  color: #333;
+  line-height: 0.8em;
+  padding: 24px 0px;
+  text-align: center;
+  color: #fff;
+}
+#attire .content {
+  width: 100%;
+  color: #fff;
+  border-radius: 10px;
+}
+#attire .container { padding: 50px 0px; }
+#attire .col header { display: flex; align-items: flex-end; height: 100%; }
+#attire .col header h1 { font-weight: 200; height: 100%; font-size: clamp(2rem, 2vw, 9rem) }
+#attire .col { display: flex; justify-content: space-between; align-items: flex-end; border-top: solid 1px #245a81; }
+#attire .col section {
+  display: flex;
+  flex-direction: column;
+}
+#attire .col section div { padding:  24px 12px; }
+#attire p { font-family: 'Poppins', sans-serif; }
+#attire .col .colors { padding: 10px 0px; }
+#attire .col .colors div { display: flex; flex-direction: row; }
+#attire .react-parallax { 
+  display: flex; 
+  align-items: flex-end; 
+  justify-content: center; 
+}
+#attire .col span { 
+  height: 25px; 
+  width: 25px; 
+  border-radius: 100px; 
+  display: flex; 
+  border: solid 2px #fff; 
+  margin: 0px 10px;
+}
+#attire .col .title { padding: 10px 12px ; }
+#attire .col .title h3 { padding: 10px 0px ; }
+#attire .col .kulay { padding: 0px; }
 /* 4. Media Queries
 ----------------------------*/
+/* Tablet */
+@media only screen and (max-width: 960px) {
+  #attire h1 { text-align: left; }
+}
 
 /* Desktop */
 @media only screen and (max-width: 568px) {
@@ -397,4 +455,5 @@ br, hr {
   }
   #homepage #second .wrapper .first { background-position: 51% 39%; }
   #homepage #second .wrapper .second { background-position: 44% 34%; }
+  #attire .col { flex-direction: column; }
 }

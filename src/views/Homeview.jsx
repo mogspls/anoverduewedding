@@ -122,7 +122,7 @@ export default function Homeview() {
           <div className="container">
             <div className="subtitle">
               <h1>An Overdue <br/> Wedding</h1>
-              <p>Finally tying the knot at <strong>December 4, 2021</strong></p>
+              <p>Finally tying the knot on <strong>December 4, 2021</strong></p>
             </div>
             <div className="scrollDown">
               <p>Scroll Down</p>
@@ -171,7 +171,7 @@ export default function Homeview() {
               <h4>Parents of the Groom</h4>
               <div>
                 <p>Ernesto P. Due</p>
-                <p>Rose Lulh4u R. Due</p>
+                <p>Rose Lulu R. Due</p>
               </div>
             </div>
             <div>
@@ -256,8 +256,8 @@ export default function Homeview() {
             </div>
           </div>
           <div className="letter">
-            <h1 style={{fontSize: '21px', padding: '32px 0px'}}>#AnoverDueWedding</h1>
-            <a href="">Click here <br/> to RSVP</a>
+            <h1 style={{fontSize: '21px', padding: '32px 0px'}}>#AnOverDueWedding</h1>
+            <a href="https://forms.gle/Mq4dZUYbRjk6VfCU6">Click here <br/> to RSVP</a>
           </div>
         </div>
       </section>
