@@ -22,6 +22,8 @@ Table of Contents
 ----------------------------*/
 :root {
   --blue: #0D395D;
+  --pink: #B48082;
+  --lightpink: #E5D1CF
 }
 
 *, *:before, *:after {
@@ -247,40 +249,77 @@ br, hr {
   align-items: center;
   justify-content: center;
   min-width: 160px;
-  max-width: 320px;
 }
-#second .container .details {
+#second .details {
   display: flex;
-  padding: 10px;
-  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
-#second .container .details h1 { text-align: center; }
-#second .container .details div h6 { font-size: 14px; }
-#second .container .details div { padding: 12px 0px; text-align: center; }
-#second .container .details div p { padding: 4px 0px; font-size: clamp(0.8rem, 1.15vw, 12rem); font-family: 'Poppins', sans-serif; font-weight: 300; color: #0A395C;}
-.displayNone {
-  display: none;
+#second .details h1 {
+  font-size: clamp(1rem, 5vw, 12rem);
+  line-height: 0.9em;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 0px 12px;
+  border-right: solid 2px var(--blue);
+  color: var(--blue);
 }
-
+#second .details section {
+  width: 100%;
+  padding: 0px 24px;
+  flex: 1.5;
+}
+#second .details section div {
+  padding-bottom: 12px;
+  font-family: 'Poppins', sans-serif !important;
+}
+#second .details section h2 { color: var(--blue); font-weight: 500; }
+#second .details section p { color: var(--blue); font-weight: 300; color: #000; }
+#second .details section h2,
+#second .details section p {
+  padding: 6px 0px;
+  font-family: 'Poppins', sans-serif !important;
+}
 /* Fourth */
-#fourth  {
-  padding: 50px 0px;
-  background: #E5D1CF;
+#fourth {
+  height: 100%;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: var(--lightpink);
+  padding: 12px;
 }
-#fourth h1 { font-size: 2em; padding-bottom: 12px; }
-#fourth #entourage > div {
-  padding: 18px 0px;
+#fourth header {
+  font-size: 32px;
   text-align: center;
 }
-#fourth #entourage > div p {
-  padding: 9px 0px;
+#fourth .flex {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
-#fourth #entourage .secondary-sponsors div{
+#fourth h1,
+#fourth h2,
+#fourth h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 5px 0px;
+  color: var(--blue)
+}
+#fourth div section div{
   padding: 24px 0px;
+  flex-direction: column;
 }
-#fourth #entourage .secondary-sponsors div p{
-  padding: 0px;
+#fourth p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  padding: 5px 0px;
 }
+#fourth main {
+  display: flex;
+  justify-content: space-around;
+}
+
 
 /* Fifth */
 #fifth {
@@ -293,11 +332,18 @@ br, hr {
   position: relative;
   z-index: 1000;
 }
-#fifth .logo-wrapper { padding: 12px; border: solid 2px #0A395C; border-radius: 150px; background: #0A395C;}
+#fifth .logo-wrapper { 
+  padding: 12px; 
+  border: solid 2px #0A395C; 
+  border-radius: 150px; 
+  background-image: url('./assets/images/WaxSealPatternjpg.jpg')
+}
 #fifth .logo {
   height: 150px;
   width: 150px;
-  background: #0A395C;
+  background-image: url('./assets/images/WaxSealPatternjpg.jpg');
+  background-size: cover;
+  background-position: center;
   padding: 24px;
   border-radius: 150px;
   border: solid 2px #fff;
@@ -379,6 +425,14 @@ br, hr {
   text-align: center;
   font-size: 32px;
 }
+.ribbon .letter a {
+  font-size: 16px;
+  background: var(--blue);
+  color: #fff;
+  line-height: 1em;
+  text-decoration: none;
+  padding: 12px 24px;
+}
 
 /* Details Page */
 #attire {
@@ -396,47 +450,105 @@ br, hr {
   color: #333;
   line-height: 0.8em;
   padding: 24px 0px;
-  text-align: center;
-  color: #fff;
+  text-align: left;
+  color: var(--pink);
 }
 #attire .content {
   width: 100%;
   color: #fff;
   border-radius: 10px;
 }
-#attire .container { padding: 50px 0px; }
-#attire .col header { display: flex; align-items: flex-end; height: 100%; }
-#attire .col header h1 { font-weight: 200; height: 100%; font-size: clamp(2rem, 2vw, 9rem) }
-#attire .col { display: flex; justify-content: space-between; align-items: flex-end; border-top: solid 1px #245a81; }
+#attire .container { 
+  padding: 50px 0px; 
+}
+#attire .col header { 
+  display: flex; 
+  align-items: flex-start;
+  width: 100%; 
+  padding: 10px 0px;
+}
+#attire .col header h1 { 
+  font-weight: 200; 
+  height: 100%; 
+  font-size: clamp(1.5rem, 2vw, 9rem);
+  text-align: left;
+}
+#attire .col header h3 {
+  font-size: clamp(1rem, 1.5vw, 12rem);
+}
+#attire .col { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-end; 
+  border-top: solid 1px #245a81; 
+}
+#attire .col ul { margin-left: 18px; }
+#attire .col ul li { font-family: 'Poppins', sans-serif; font-weight: 300; }
 #attire .col section {
   display: flex;
   flex-direction: column;
 }
-#attire .col section div { padding:  24px 12px; }
+#attire .col section div { padding:  24px 12px; width: 100%; }
 #attire p { font-family: 'Poppins', sans-serif; }
-#attire .col .colors { padding: 10px 0px; }
-#attire .col .colors div { display: flex; flex-direction: row; }
+#attire .col .colors { padding: 10px 0px; width: 100%; max-width: 270px; }
+#attire .col .colors div { 
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 #attire .react-parallax { 
   display: flex; 
-  align-items: center; 
+  align-items: flex-start;
   justify-content: center; 
 }
+#attire .react-parallax img { 
+  transform: translate(-50%,-50%)}
 #attire .col span { 
   height: 25px; 
   width: 25px; 
   border-radius: 100px; 
   display: flex; 
   border: solid 2px #fff; 
-  margin: 0px 10px;
+  margin: 10px 8px;
 }
 #attire .col .title { padding: 10px 12px ; }
-#attire .col .title h3 { padding: 10px 0px ; }
+#attire .col .title h3 { padding: 10px 0px ; color: #fff }
 #attire .col .kulay { padding: 0px; }
+#attire #guests section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+#attire .mosaic {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#attire .mosaic div {
+  width: 100%;
+  min-width: 100px;
+  max-width: 150px;
+  height: 100%;
+  min-height: 150px;
+  border-radius: 4px;
+  margin: 5px;
+  border: solid 1px #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+/* FAQs Page */
+/* #FAQs */
+
+
 /* 4. Media Queries
 ----------------------------*/
 /* Tablet */
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1080px) {
   #attire h1 { text-align: left; }
+  #attire #guests section { flex-direction: column; }
+  #fourth main { flex-direction: column; }
 }
 
 /* Desktop */
@@ -455,5 +567,6 @@ br, hr {
   }
   #homepage #second .wrapper .first { background-position: 51% 39%; }
   #homepage #second .wrapper .second { background-position: 44% 34%; }
-  #attire .col { flex-direction: column; }
+  #attire .col { flex-direction: column; align-items: flex-start; }
+  #fourth .flex { flex-direction: column; }
 }
