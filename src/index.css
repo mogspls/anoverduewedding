@@ -591,11 +591,10 @@ br, hr {
 #faqs main div p,
 #covid main div p { 
   flex: 5; 
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Poppins', sans-serif !important; 
   color: #fff;
   line-height: 1.75em;
   font-weight: 300;
-  display: flex;
   padding: 12px 0px;
 }
 #faqs main div div,

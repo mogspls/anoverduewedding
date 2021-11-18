@@ -39,14 +39,14 @@ export default function COVID() {
             <div>
               <h2>How do I RSVP?</h2>
               <p>Scrolling down on the homepage will reveal a link which will direct you to the RSVP page. Kindly accomplish the form accurately and correctly. We will need your details in order to consolidate guest details for COVID-testing, catering, seating, and contact tracing purposes.</p>
-              <p>Please confirm whether you will be able to attend the wedding or not on or before <strong>November 24, 2021</strong>.</p>
+              <p>Please confirm whether you will be able to attend the wedding or not on or before <span style={{fontWeight: '600', fontFamily: 'Poppins, sans-serif', color: "#fff"}}>November 24, 2021</span>.</p>
             </div>
           </div>
           <div>
             <h1>5.</h1>
             <div>
               <h2>I already said YES to the RSVP but won’t be able to attend due to an unforeseen event. What should I do?</h2>
-              <p>It would be sad that you can no longer attend our wedding, but we completely understand that there are factors that are beyond our control. Please let us know as soon as possible so we can give your allotted seat to other guest/s.</p>
+              <p>It would be sad that you can no longer attend our wedding, but we completely understand that there are factors that are beyond your control. Please let us know as soon as possible so we can give your allotted seat to other guest/s.</p>
             </div>
           </div>
           <div>
