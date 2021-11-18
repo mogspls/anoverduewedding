@@ -30,7 +30,7 @@ export default function Homeview() {
       scrollTrigger: {
         scroller: document.body,
         trigger: "#landing",
-        start: "center center",
+        start: "top top",
         end: "bottom center",
         scrub: true,
         // markers: true,
@@ -102,13 +102,13 @@ export default function Homeview() {
     gsap.to(".letter", {
       scrollTrigger: {
         scroller: document.body,
-        trigger: "#fourth",
+        trigger: "#fifth",
         start: "top bottom",
         end: "center center",
         scrub: true,
         invalidateOnRefresh: true
       },
-      y: '-75%',
+      y: '-60%',
     })
   }, []);
 
@@ -161,6 +161,94 @@ export default function Homeview() {
       {/* End of second */}
       <section id="third"></section>
       <section id="fourth">
+        <div className="container">
+          <div style={{textAlign: 'center'}}>
+            <h1>Entourage</h1>
+            <img src={Wreathe} alt="Laurel Wreathe" height="100px" style={{padding: '10px'}} />
+          </div>
+          <div id="entourage">
+            <div>
+              <h4>Parents of the Groom</h4>
+              <div>
+                <p>Ernesto P. Due</p>
+                <p>Rose Lulh4u R. Due</p>
+              </div>
+            </div>
+            <div>
+              <h4>Parents of the Bride</h4>
+              <div>
+                <p>Albert Dennis N. Añover</p>
+                <p>Lizabelle A. Añover</p>
+              </div>
+            </div>
+            <div>
+              <h4>Maid of Honor</h4>
+              <p>Alyssa Danielle A. Añover</p>
+            </div>
+            <div>
+              <h4>Best Men</h4>
+              <div>
+                <p>Franzly R. Suaze</p>
+                <p>Allen Dale M. Carbonera</p>
+              </div>
+            </div>
+            <div>
+              <h4>Principal Sponsors</h4>
+              <div>
+                <p>Emmanuel A. Ballesca &amp; Ruby Rowena A. Ballesca</p>
+                <p>Ponciano C. Bautista, Jr. &amp; Maria Ester F. Bautista</p>
+                <p>Bernardo S. Belen &amp; Ann Margaret M. Belen</p>
+                <p>Teodoro S. Carbonera &amp; Ma. Mathea M. Carbonera</p>
+                <p>Jose Vittorio H. Gaite &amp; Cecille Anne C. Gaite</p>
+                <p>Pio Diomedes B. Manalo &amp; Victoria Theresa S. Bautista</p>
+              </div>
+            </div>
+            <div className="secondary-sponsors">
+              <h1>Secondary Sponsors</h1>
+              <div>
+                <h4>Candle</h4>
+                <div>
+                  <p>Noel Jacob A. Añover</p>
+                  <p>Frances Andrea A. Añover</p>
+                </div>
+              </div>
+              <div>
+                <h4>Veil</h4>
+                <div>
+                  <p>Arvin Jerome A. Adiao</p>
+                  <p>Ma. Carmela C. Murillo</p>
+                </div>
+              </div>
+              <div>
+                <h4>Cord</h4>
+                <div>
+                  <p>Kharl Michael R. Manlutac</p>
+                  <p>Cheryl Yvan C. Chong</p>
+                </div>
+              </div>
+              <div>
+                <h4>Bible bearer</h4>
+                <div>
+                  <p>Khenn Michael R. Manlutac</p>
+                </div>
+              </div>
+              <div>
+                <h4>Ring bearer</h4>
+                <div>
+                  <p>David Joshua A. Añover</p>
+                </div>
+              </div>
+              <div>
+                <h4>Coin bearer</h4>
+                <div>
+                  <p>Jose Miguel A. Añover</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="fifth">
         <div className="ribbon">
           <div id="envelope">
             <div className="logo-wrapper">
