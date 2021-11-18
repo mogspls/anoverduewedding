@@ -539,7 +539,11 @@ br, hr {
 }
 
 /* FAQs Page */
-/* #FAQs */
+#faqs {
+  height: 100%;
+  min-height: 100vh;
+  background-image: url('./assets/images/pattern.png');
+}
 
 
 /* 4. Media Queries

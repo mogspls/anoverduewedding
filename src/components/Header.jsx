@@ -11,7 +11,7 @@ export default function Header() {
       </Link>
       <nav>
         <ul>
-          {/* <li><Link to="/details"><p>Details</p></Link></li> */}
+          <li><Link to="/details"><p>Details</p></Link></li>
           <li><Link to="/attire"><p>Attire</p></Link></li>
           {/* <li><Link to="/"><p>Map</p></Link></li> */}
         </ul>
