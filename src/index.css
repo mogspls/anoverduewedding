@@ -418,7 +418,7 @@ br, hr {
 #attire .col .colors div { display: flex; flex-direction: row; }
 #attire .react-parallax { 
   display: flex; 
-  align-items: flex-end; 
+  align-items: center; 
   justify-content: center; 
 }
 #attire .col span { 

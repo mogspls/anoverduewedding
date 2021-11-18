@@ -1,16 +1,18 @@
 import { Parallax } from "react-parallax";
-import Banner from "../assets/images/DESKTOP.jpg"
+import Banner from "../assets/images/PHS06288-Edit.jpg"
 
 
 export default function Attire() {
+  function scrollTop() { window.scrollTo(0,0); }
+  scrollTop();
 
   const colors = [
-    {
+     {
       name: "Bridesmaids",
       colors: ["#D2A4A3", "#C29191", "#B47F81", "#CA9A9A", "#BB8888", "#DAAFAD"]
     },
     {
-      name: "Grooms",
+      name: "Groomsmen",
       colors: ["#132A40", "#12304B", "#0F3657", "#132D46", "#0D395D", "#113351"]
     },
     {
