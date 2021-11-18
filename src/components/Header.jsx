@@ -11,8 +11,9 @@ export default function Header() {
       </Link>
       <nav>
         <ul>
-          <li><Link to="/covid-protocols"><p>COVID Protocols</p></Link></li>
           <li><Link to="/attire"><p>Attire</p></Link></li>
+          <li><Link to="/covid-protocols"><p>COVID Protocols</p></Link></li>
+          <li><Link to="/FAQs"><p>FAQs</p></Link></li>
         </ul>
       </nav>
     </header>
