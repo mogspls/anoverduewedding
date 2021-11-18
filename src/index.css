@@ -49,7 +49,6 @@ body {
   scroll-behavior: smooth;
   overflow-y: auto;
   height: 100%;
-  background: #111;
   width: 100%;
 }
 br, hr {
@@ -539,10 +538,65 @@ br, hr {
 }
 
 /* FAQs Page */
-#faqs {
+#covid {
   height: 100%;
-  min-height: 100vh;
-  background-image: url('./assets/images/pattern.png');
+  background-size: 150px;
+  background-repeat: repeat;
+  background-color: var(--blue);
+  padding: 150px 24px 50px;
+}
+#covid header {
+  border-bottom: solid 1px #fff;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+#covid header h1 {
+  font-family: 'Playfair Display', serif;
+  line-height: 0.8em;
+  font-size: clamp(1rem, 8vw, 12rem);
+  color: #fff;
+  text-align: right;
+  padding: 12px;
+}
+#covid header p {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 0px 24px;
+  flex: 2;
+  width: 100%;
+  max-width: 360px;
+  line-height: 1.75em
+}
+#covid main div {
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+}
+#covid main div h1 {
+  text-align: center;
+  font-size: 50px; 
+  line-height: 1em; 
+  height: 100%;
+  padding: 12px;
+  display: block;
+  width: 100px;
+}
+#covid main div p { 
+  flex: 5; 
+  font-family: 'Poppins', sans-serif; 
+  color: #fff;
+  padding: 75px;
+  padding-bottom: 0px;
+  line-height: 1.75em;
+  display: flex;
+}
+#covid main div div {
+  width: 100%;
+  border-left: solid 1px #fff;
+  display: flex;
+  align-items: flex-end;
+  flex: 3;
 }
 
 

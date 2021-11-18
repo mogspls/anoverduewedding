@@ -111,7 +111,7 @@ export default function Attire() {
                           <h3>Gentlemen</h3>
                         </header>
                         <ul>
-                          <li>Blue coat, white long sleeves, necktie (provided) and slacks</li>
+                          <li>Blue coat, white long sleeves, necktie (provided), vest (optional) and slacks</li>
                         </ul>
                       </div>
                       <header>

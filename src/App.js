@@ -9,7 +9,7 @@ import {
 /* Views 
 -----------------------*/
 import Homeview from "./views/Homeview";
-import Details from "./views/Details";
+import COVID from "./views/COVID";
 import Attire from "./views/Attire";
 
 /* Components 
@@ -20,7 +20,7 @@ function App() {
   return (
     <Switch>
       <Route exact path="/" component={() => <Homeview/>} />
-      <Route exact path="/details" component={() => <Details/>} />
+      <Route exact path="/covid-protocols" component={() => <COVID/>} />
       <Route exact path="/attire" component={() => <Attire/>} />
     </Switch>
   )
