@@ -183,7 +183,7 @@ export default function Homeview() {
               <section>
                 <div>
                   <h2>Principal Sponsors</h2>
-                  <p>Emmanuel R. Ballesca</p>
+                  <p>Manuel A. Ballesca</p>
                   <p>Ruby Rowena A. Ballesca</p>
                   <p>Ponciano C. Bautista, Jr.</p>
                   <p>Maria Ester F. Bautista</p>
